@@ -2,11 +2,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #c9c9c9;
+    font-family: Georgia;
+    font-weight: 100;
 }
 
 html {
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: Georg;
+    src: url(fonts/georgia.ppt);
 }
 
 .wrap {
@@ -31,5 +38,15 @@ ul li {
 }
 
 a {
+    transition: all.3s ease;
     color: #9bb7ff;
+}
+
+a:hover {
+    color: #514cff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
