@@ -180,17 +180,28 @@ header {
     border-bottom: 10px solid #e9e9e9;
 
     .title {
-        width: 35%;
+        width: 36%;
         float: left;
 
         h2 {
             float: left;
-            font-size: 30px;
+            font-size: 36px;
+            margin-top: 142px;
+            letter-spacing: 0.1px;
+            margin-left: 1px;
+            font-family: Georgia;
+            font-weight: 100;
+            line-height: 36px;
         }
         
         p {
             float: left;
-            font-size: 14px;
+            font-size: 15px;
+            margin-top: 19px;
+            font-family: Georgia;
+            font-weight: 100;
+            line-height: 22px;
+            margin-left: 3px;
         }
         
         input[type="button"] {
@@ -198,7 +209,12 @@ header {
             background-color: #0099ff;
             color: #ffffff;
             border: none;
+            padding: 7px;
+            padding-bottom: 6px;
             text-transform: uppercase;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 17px;
         }
     }
 
@@ -211,13 +227,13 @@ header {
 
         div {
             display: inline-block;
-            margin-top: 180px;
+            margin-top: 170px;
         }
 
         p {
-            margin-top: 35%;
+            margin-top: 37.5%;
             color: #ffffff;
-            font-size: 28px;
+            font-size: 22px;
         }
 
         .elipse {
@@ -233,6 +249,104 @@ header {
             width: 10px;
             height: 10px;
             margin-right: 410px;
+        }
+    }
+}
+
+.intro {
+    width: 960px;
+    padding: 41px 20px 0 20px;
+    margin-bottom: 30px;
+    float: left;
+
+    .devices {
+        float: left;
+        width: 470px;
+
+        .monitor {
+            float: left;
+            width: 310px;
+        }
+
+        .arrow {
+            & {
+                width: 67px;
+                height: 90px;
+                float: left;
+            }
+
+            &-1 {
+                margin-left: 42px;
+                margin-top: 41px;
+                float: left;
+            }
+
+            &-2 {
+                transform: rotate(180deg);
+                margin-top: -86px;
+                float: left;
+            }
+
+            &-3 {
+                transform: rotate(90deg);
+                margin-left: 77px;
+                margin-top: 15px;
+                float: left;
+            }
+        }
+
+        .tablet {
+             margin-left: 25px;
+             margin-top: 26px;
+             float: left;
+         }
+
+        .phone {
+            &-1 {
+                float: left;
+                margin-left: 18px;
+                margin-top: -2px;
+            }
+
+            &-2 {
+                float: left;
+                transform: rotate(90deg);
+                margin-left: 42px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .something {
+        float: left;
+        width: 450px;
+        margin-left: 40px;
+
+        .blocks {
+            float: left;
+            width: 50%;
+            text-align: center;
+
+            .img {
+                width: 85px;
+                height: 80px;
+                background-color: #494949;
+                text-align: center;
+                margin: 0 auto;
+
+                p {
+                    padding-top: 35%;
+                    color: #fff;
+                }
+            }
+
+            a {
+                font-family: Georgia;
+            }
+
+            p {
+                font-family: Georgia;
+            }
         }
     }
 }
