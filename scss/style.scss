@@ -54,9 +54,10 @@ header {
 
 .nav {
     & {
+
         width: 960px;
         float: left;
-        padding: 37px 0 16px 0;
+        padding: 36px 0 16px 0;
         margin: 0 20px 0 20px;
         margin-bottom: 39px;
         border-bottom: 5px solid rgba(235, 235, 235, 0.64);
@@ -75,6 +76,7 @@ header {
         margin-left: 5px;
         font-size: 15px;
         padding-bottom: 17px;
+        font-family: -webkit-pictograph;
     }
     
     &-01 {
@@ -121,7 +123,7 @@ header {
     margin-left: 20px;
     float: left;
     margin-right: 20px;
-    margin-bottom: 39px;
+    margin-bottom: 42px;
 
     &-text {
         float: left;
@@ -145,28 +147,30 @@ header {
     &-search {
         float: right;
         margin-left: 458px;
-        margin-top: 27px;
+        margin-top: 28px;
 
-        input[type="text"] {
-            float: right;
-            background-color: rgba(192, 192, 192, 0.26);
-            width: 198px;
-            border: none;
-            border-radius: 5px;
-            color: rgba(33, 7, 7, 0.56);
-            padding: 8px;
-        }
-        
         input[type="button"] {
             color: white;
             float: right;
             border: none;
-            font-size: 12.7px;
-            padding: 8.5px;
+            font-size: 12.3px;
+            padding: 8.5px 9.5px 8.5px 8.5px;
             border-radius: 5px;
+            font-family: Georgia;
             margin-left: 5px;
             text-transform: uppercase;
             background-color: rgba(0, 102, 255, 0.69);
+        }
+
+        input[type="text"] {
+            float: right;
+            background-color: rgba(192, 192, 192, 0.26);
+            width: 201px;
+            border: none;
+            border-radius: 5px;
+            font-family: Georgia;
+            color: rgba(33, 7, 7, 0.56);
+            padding: 8px 8px 8px 5px;
         }
     }
 }
@@ -256,7 +260,7 @@ header {
 .intro {
     width: 960px;
     padding: 41px 20px 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 11px;
     float: left;
 
     .devices {
@@ -319,34 +323,137 @@ header {
 
     .something {
         float: left;
-        width: 450px;
-        margin-left: 40px;
+        width: 467px;
+        margin-left: 23px;
 
         .blocks {
-            float: left;
-            width: 50%;
-            text-align: center;
-
-            .img {
-                width: 85px;
-                height: 80px;
-                background-color: #494949;
+            & {
+                float: left;
+                width: 50%;
                 text-align: center;
-                margin: 0 auto;
+            }
+
+            &-left {
+                float: left;
+                width: 47%;
+                text-align: center;
+                margin-top: 1px;
+                margin-left: 2px;
+                margin-right: 23px;
+                margin-bottom: 25px;
+
+                .img {
+                    width: 85px;
+                    height: 80px;
+                    float: left;
+                    background-color: #494949;
+                    text-align: center;
+                    margin-bottom: 8px;
+                    margin-left: 65px;
+
+                    p {
+                        padding-top: 33%;
+                        color: #fff;
+                        float: left;
+                        margin-left: 7px;
+                        font-size: 16px;
+                    }
+                }
+
+                a {
+                    font-family: Georgia;
+                    float: left;
+                    margin-left: 32px;
+                    margin-bottom: 11px;
+                }
 
                 p {
-                    padding-top: 35%;
-                    color: #fff;
+                    font-family: Georgia;
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-left: -5px;
+                    float: left;
                 }
             }
 
-            a {
-                font-family: Georgia;
-            }
+            &-right {
+                float: left;
+                width: 47%;
+                text-align: center;
+                margin-top: 1px;
+                margin-left: 2px;
 
-            p {
-                font-family: Georgia;
+                .img {
+                    width: 85px;
+                    height: 80px;
+                    float: left;
+                    background-color: #494949;
+                    text-align: center;
+                    margin-bottom: 8px;
+                    margin-left: 65px;
+
+                    p {
+                        padding-top: 33%;
+                        color: #fff;
+                        float: left;
+                        margin-left: 7px;
+                        font-size: 16px;
+                    }
+                }
+
+                a {
+                    font-family: Georgia;
+                    float: left;
+                    margin-left: 32px;
+                    margin-bottom: 11px;
+                }
+
+                p {
+                    font-family: Georgia;
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-left: -7px;
+                    float: left;
+                }
             }
         }
+    }
+}
+
+.contactUs {
+    width: 960px;
+    float: left;
+    margin: 0 20px 0 20px;
+    border-left: 10px solid #0099ff;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+
+    .text {
+        float: left;
+        width: 60%;
+
+        p {
+            float: left;
+            font-size: 17.85px;
+            margin: 1px 0 26px 30px;
+        }
+
+        p:first-child {
+            font-size: 36.3px;
+            margin: 26px 0 6px 30px;
+        }
+    }
+    
+    input {
+        float: left;
+        border: none;
+        background-color: #0099ff;
+        color: #e0e0e0;
+        padding: 16px 12px 13px 10px;
+        font-size: 25.5px;
+        border-radius: 7px;
+        margin-left: 63px;
+        margin-top: 32px;
+        text-transform: uppercase;
     }
 }
